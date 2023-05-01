@@ -1,3 +1,10 @@
 <p>login works!</p>
 <div>{{number}}</div>
 <button (click)="send()">send data</button>
+<form [formGroup]="userdata">
+    <input formControlName="user_name" type="text" placeholder="name">
+    <input formControlName="user_fullname" type="text" placeholder="lastname">
+    <input formControlName="user_phone" type="number" placeholder="phone">
+    <input formControlName="user_email" type="email" placeholder="email">
+    <button (click)="sbmt()" type="submit">submit</button>
+</form>
